@@ -1,12 +1,13 @@
 import {StyleSheet} from 'react-native';
 import {wp} from '../../../../configs/config';
+import {pallete} from '../../../../configs/Colors';
 
 export const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: '#1E2D3D',
+    backgroundColor: pallete.secondary,
     padding: 10,
     height: wp(50),
   },
@@ -23,6 +24,6 @@ export const styles = StyleSheet.create({
   searchInput: {
     marginLeft: 10,
     marginRight: 10,
-    color: '#FFFFFF',
+    color: pallete.black,
   },
 });
