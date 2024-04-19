@@ -22,7 +22,6 @@ export const styles = StyleSheet.create({
     backgroundColor: pallete.white,
     marginTop: -100,
     alignSelf: 'center',
-    paddingHorizontal: wp(100),
     paddingVertical: wp(40),
     alignItems: 'center',
     borderRadius: 10,

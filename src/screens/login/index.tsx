@@ -42,13 +42,12 @@ const LoginScreen: React.FC = () => {
     setLoading(true);
     try {
       const response = await axios.post('https://dummyjson.com/auth/login', {
-        username: email,
-        password,
+        username: email.trim(),
+        password: password.trim(),
       });
       if (response.data.token) {
         dispatch(setUser(response.data));
         dispatch(setLoginState(true));
-        console.log(JSON.stringify(response.data, null, 2), ' user');
         Alert.alert('Login Success', 'WELCOME');
       } else {
         dispatch(setLoginState(false));
@@ -87,7 +86,7 @@ const LoginScreen: React.FC = () => {
           <InputField
             value={email}
             onChangeText={setEmail}
-            placeholder="Email"
+            placeholder="Username/Email"
           />
         </View>
         <View style={styles.passwordContainer}>

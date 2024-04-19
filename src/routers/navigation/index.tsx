@@ -19,6 +19,7 @@ import {
   Saved,
 } from '../../screens';
 import {routes} from '../router-constants/routes';
+import {wp} from '../../configs/config';
 
 const AuthStack = createStackNavigator();
 const Tab = createBottomTabNavigator();
