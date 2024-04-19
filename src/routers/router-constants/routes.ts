@@ -1,0 +1,9 @@
+export const routes = {
+  ACCOUNT: 'ACCOUNT',
+  CART: 'CART',
+  SAVED: 'SAVED',
+  HOME: 'HOME',
+  ONBOARDING: 'ONBOARDING',
+  LOGIN: 'LOGIN',
+  LANDING_SCREEN: 'LANDING_SCREEN',
+};
