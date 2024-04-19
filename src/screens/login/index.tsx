@@ -139,7 +139,7 @@ const LoginScreen: React.FC = () => {
             extraStyles={{
               alignSelf: 'center',
             }}>
-            <Text>Don't have an account?</Text>
+            <AppText text="Don't have an account?" color="black" />
             <TouchableOpacity>
               <AppText text="Sign up" color={pallete.primary} />
             </TouchableOpacity>

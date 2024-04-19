@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#fff',
   },
-  wrapper: {width: '20%', alignSelf: 'center', marginBottom: wp(50)},
+  wrapper: {width: '30%', alignSelf: 'center', marginBottom: wp(50)},
   title: {
     fontSize: 22,
     fontWeight: 'bold',
@@ -35,6 +35,7 @@ export const styles = StyleSheet.create({
     borderBottomColor: 'gray',
     padding: 10,
     flex: 1,
+    color: pallete.black,
   },
   passwordContainer: {
     flexDirection: 'row',
@@ -58,6 +59,7 @@ export const styles = StyleSheet.create({
   },
   label: {
     margin: 8,
+    color: pallete.black,
   },
   button: {
     backgroundColor: pallete.secondary,

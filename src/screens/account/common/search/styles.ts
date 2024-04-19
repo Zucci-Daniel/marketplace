@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     backgroundColor: '#1E2D3D',
     padding: 10,
+    height: wp(50),
   },
   search: {
     flexDirection: 'row',

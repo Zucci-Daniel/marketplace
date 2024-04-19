@@ -62,13 +62,17 @@ function AuthNavigator() {
 
 function MainNavigator() {
   return (
-    <Tab.Navigator initialRouteName={routes.ACCOUNT}>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarActiveTintColor: pallete.primary,
+        tabBarInactiveTintColor: pallete.black,
+        headerShown: false,
+      }}
+      initialRouteName={routes.ACCOUNT}>
       <Tab.Screen
         name={routes.HOME}
         component={Home}
         options={{
-          tabBarActiveTintColor: pallete.primary,
-          tabBarInactiveTintColor: pallete.black,
           headerShown: false,
           tabBarIcon: ({color, focused}) => (
             <AppTabButton
